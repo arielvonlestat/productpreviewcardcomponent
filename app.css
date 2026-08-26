@@ -1,0 +1,164 @@
+:root {
+  --color-green500: hsl(158, 36%, 37%);
+  --color-green700: hsl(158, 42%, 18%);
+  --color-black: hsl(212, 21%, 14%);
+  --color-grey: hsl(228, 12%, 48%);
+  --color-cream: hsl(30, 38%, 92%);
+  --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  background-color: var(--color-white);
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.box header {
+  font-family: "Montserrat" sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.4rem;
+  padding: 0.5rem 1rem;
+  color: var(--color-grey);
+}
+
+.box h1 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 1rem;
+}
+
+.box p {
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding: 0 1rem 1rem 1rem;
+  color: var(--color-grey);
+  line-height: 1.5;
+}
+
+.content {
+  padding: 1.4rem 1.4rem 1.4rem 1.2rem;
+}
+
+.perfume-mobile {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  color: var(--color-grey);
+}
+
+.cart {
+  position: relative;
+  right: 10px;
+  top: 2px;
+}
+
+.sale {
+  color: var(--color-green500);
+  font-weight: 700;
+  font-size: 27px;
+  font-family: "Fraunces", sans-serif;
+  padding: 1rem;
+}
+
+.originalprice {
+  padding: 1rem 0 1rem 0;
+  font-size: 12px;
+  font-family: "Fraunces", sans-serif;
+  position: relative;
+  bottom: 5px;
+  color: var(--color-grey);
+}
+
+.pricing {
+  padding-bottom: 1rem;
+}
+
+footer {
+  padding: 1rem;
+}
+
+button {
+  background-color: var(--color-green500);
+  color: var(--color-white);
+  padding: 0.8rem 6rem;
+  border-radius: 7px;
+  border: none;
+  box-shadow: none;
+  margin-left: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+button:hover {
+  background-color: var(--color-green700);
+  cursor: pointer;
+}
+
+.perfume-desktop {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .box {
+    flex-direction: row;
+    max-width: 600px;
+  }
+
+  .box header {
+    align-self: flex-start;
+    font-size: 14px;
+  }
+
+  .box h1 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .pricing {
+    align-self: flex-start;
+  }
+
+  .perfume-mobile {
+    display: none;
+  }
+
+  .perfume-desktop {
+    display: block;
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  button {
+    padding: 0.8rem 4.5rem;
+    margin-left: 0;
+  }
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
