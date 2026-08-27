@@ -28,7 +28,7 @@ Users should be able to:
 
 ![Mobile Challenge](<Frontend Mentor Product Componet Mobile.jpg>)
 
-![Desktop Challenge](<Frontend Mentor | Product preview card component.pdf>)
+![Desktop Challenge](<Frontend Mentor | Product preview card component.jpeg>)
 
 ### Links
 
